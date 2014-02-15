@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="">
     <head>
-        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <title>Blog</title>
     </head>
     <body>
 
+        <div class="container">
+            <header><h1>Hello</h1></header>
+            <div class="page">
+                <div ng-controller='HelloController'>
+                    <p>{{greeting.text}}, World</p>
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+        <script>
+
+        </script>
+        <script src="js/lib/jquery-2.1.0.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/angular.js"></script>
+        <script src="js/controllers/hello.js"></script>
     </body>
 </html>
